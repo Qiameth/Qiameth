@@ -4,13 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clase</title>
+    <title>Clase 4 - HTML: Form</title>
+    
   </head>
   <body>
-    <main>
-      <section>
-        <h1>Github page</h1>
-      </section>
-    </main>
+    <a href="index.html">Index</a>
+
+    <h1>Clase 4</h1>
+
+    <p>
+        Get me muestra la info que le mando a HTML por la URL, sirve para los servidores 
+    </br>Post manda la info, pero sin mostrarlos por la URL
+    </p>
+    
+    <form action="index.html" method="get" style="padding: 10px;">
+      <label>Usuario</label>
+      <input type="text" name="user" />
+      <label>Password</label>
+      <input type="password" name="password" />
+    </br>
+      <select name="age">
+        <option>18 - 25</option>
+        <option>26 - 36</option>
+      </select>
+      <label>Fecha de nacimiento</label>
+      <input type="date" name="bornDate" />
+      <input type="submit" value="enviar" />
+    </form>
+    <form>
+      <br>
+      Tabla 2
+      <table>
+        <tr>
+          <td>URL:</td>
+          <td>
+            <input type="url" name="url" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Números: </td>
+          <td>
+            <input type="number" step="2" min="2" max="3" /> <!--step hace que salte de a dos-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button>Enviar</button>
+            <input type="reset" value="Limpiar">
+          </td>
+        </tr>
+      </table>
+    </form>
   </body>
 </html>
