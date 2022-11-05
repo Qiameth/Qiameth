@@ -101,22 +101,31 @@ function calcularPrecio(categ, cant) {
 
 /**Limpiar el campo total a pagar cuando se presione borrar*/
 function limpiarTotalPagar() {
-  var getValue = document.getElementById("inputNombre");
-  const labelApel = document.getElementById("inputApellido");
-  const labelCor = document.getElementById("inputCorreo");
-  const labelCant = document.getElementById("inputCantidadEntradas");
-  const labelCat = document.getElementById("categoriaEntrada");
+  var labelNom = document.getElementById("inputNombre");
+  var labelApel = document.getElementById("inputApellido");
+  var labelCor = document.getElementById("inputCorreo");
+  var labelCant = document.getElementById("inputCantidadEntradas");
+  var labelCat = document.getElementById("categoriaEntrada");
 
-  if (getValue.value != "") {
-    getValue.value = "";
+  if (labelNom.value != "") {
+    labelNom.value = "";
   }
-  labelNom.reset();
-  labelTotal.innerHTML = "";
-  labelApel.innerHTML = "";
-  labelCat.innerHTML = "";
-  labelCant.innerHTML = "";
-  labelCor.innerHTML = "";
-  
+  if (labelApel.value != "") {
+    labelApel.value = "";
+  }
+  if (labelCor.value != "") {
+    labelCor.value = "";
+  }
+  if (labelCant.value != "") {
+    labelCant.value = "";
+  }
+  if (labelCat.value != "") {
+    labelCat.value = 4;
+  }
+  if (labelTotal.value != "") {
+    labelTotal.value = "";
+  }
+
 }
 
 /**Abrir ventana de resumen de compra */
