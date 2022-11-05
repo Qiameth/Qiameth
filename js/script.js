@@ -1,3 +1,4 @@
+/**Llama a las funciones que crean al header y al footer */
 function crearHeader_Footer(){
     const header = document.getElementById("barraNavegacion");
     header.innerHTML += CrearNavBar();
@@ -6,6 +7,7 @@ function crearHeader_Footer(){
     footer.innerHTML += CrearFooter();
 }
 
+/**Crea el navbar */
 function CrearNavBar(){
     const html = `<nav class="navbar navbar-expand-lg navbar-light color-fondo-gris-oscuro ">      
       <!-- logo -->
@@ -43,6 +45,7 @@ function CrearNavBar(){
 
 }
 
+/**Crea el footer */
 function CrearFooter(){
     const html = `<div class="container-fluid text-center text-white center col-12" style="background-color: #1e4a63">
       <section class="mt-3 pb-4">
@@ -94,5 +97,5 @@ function CrearFooter(){
     return html; 
 }
 
-
+/**Llamado de función */
 crearHeader_Footer();
